@@ -46,7 +46,7 @@ personnalPage/
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/personnalPage.git
+   git clone https://github.com/your-username/dev_profile_kevin.git
    ```
 
 2. Navigate to the project folder:
