@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin - Développeur Web Freelance</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Kevin</h1>
+            <h2>Développeur Web Freelance</h2>
+            <p>Spécialisé en Python, Django et développement web full-stack</p>
+        </section>
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Passionné par la création de solutions web innovantes, je suis un développeur freelance avec une expertise en Python et Django. J'aime relever de nouveaux défis et apprendre constamment de nouvelles technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Mes compétences</h2>
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Mes projets</h2>
+            <!-- Ici, vous pouvez ajouter une liste ou une grille de vos projets -->
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <!-- Ici, vous pouvez ajouter un formulaire de contact ou vos coordonnées -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kevin - Développeur Web Freelance. Tous droits réservés.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
