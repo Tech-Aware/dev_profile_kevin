@@ -2,62 +2,313 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin - Développeur Web Freelance</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Andreazza — Développeur Full-Stack · Consultant IA & Transition Digitale</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="hero">
-            <h1>Kevin</h1>
-            <h2>Développeur Web Freelance</h2>
-            <p>Spécialisé en Python, Django et développement web full-stack</p>
-        </section>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<canvas id="bg-canvas"></canvas>
 
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Passionné par la création de solutions web innovantes, je suis un développeur freelance avec une expertise en Python et Django. J'aime relever de nouveaux défis et apprendre constamment de nouvelles technologies.</p>
-        </section>
+<nav>
+  <div class="logo">K.Andreazza</div>
+  <div class="nav-links">
+    <a href="#about">Parcours</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projets</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact" class="nav-cta">Me contacter</a>
+  </div>
+</nav>
 
-        <section id="skills">
-            <h2>Mes compétences</h2>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>HTML5 / CSS3</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>Git</li>
-            </ul>
-        </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label">Développeur Full-Stack · Consultant IA &amp; Transition Digitale — Ariège, Occitanie</div>
+  <h1 data-parallax="0.03">Autodidacte,<br>passionné,<br><em>builder</em></h1>
+  <p class="hero-sub">De la crypto à l'IA, du Python au Kotlin — je construis des outils qui résolvent de vrais problèmes. Développeur, formateur et consultant, j'accompagne les entreprises dans leur transformation numérique.</p>
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary magnetic">Discutons de votre projet →</a>
+    <a href="#projects" class="btn-secondary magnetic">Voir mes réalisations</a>
+  </div>
+  <div class="hero-3d">
+    <div class="orbit-ring orbit-1"><div class="orbit-dot"></div></div>
+    <div class="orbit-ring orbit-2"><div class="orbit-dot"></div></div>
+    <div class="cube-wrapper">
+      <div class="cube-face face-front">Python</div>
+      <div class="cube-face face-back">IA</div>
+      <div class="cube-face face-left">Django</div>
+      <div class="cube-face face-right">Crypto</div>
+      <div class="cube-face face-top">Kotlin</div>
+      <div class="cube-face face-bottom">Web</div>
+    </div>
+  </div>
+</section>
 
-        <section id="projects">
-            <h2>Mes projets</h2>
-            <!-- Ici, vous pouvez ajouter une liste ou une grille de vos projets -->
-        </section>
+<div class="section-divider"></div>
 
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <!-- Ici, vous pouvez ajouter un formulaire de contact ou vos coordonnées -->
-        </section>
-    </main>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">Mon parcours</div>
+  <h2 class="section-title reveal-3d">Un chemin <em>atypique</em>, une énergie intacte</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Je suis <strong>Kevin Andreazza</strong>, développeur full-stack autodidacte basé en Ariège. Mon parcours commence loin du code : passionné par les cryptomonnaies et la blockchain dès 2017, je fonde <strong>CryptoClub</strong> en 2021 — un projet qui m'amène à apprendre l'infographie, la vidéo, la communication et finalement le développement.</p>
+      <br>
+      <p>Cette curiosité insatiable m'a conduit chez <strong>Satochip</strong>, où j'ai contribué à l'unification et la refonte UI/UX de leurs utilitaires Python pour hardware wallets crypto. Aujourd'hui, je développe et enseigne au sein de <strong>Tech Aware</strong>, je construis des outils d'automatisation avec l'IA, et j'accompagne des entreprises dans leur transition numérique.</p>
+      <br>
+      <p>Ce qui me caractérise : une <strong>courbe d'apprentissage exponentielle</strong>, un souci constant de l'esthétisme applicatif, et une approche humble mais déterminée. Je me lève chaque jour à 6h pour coder — et j'aime ça.</p>
+    </div>
+    <div class="about-highlight reveal-3d">
+      <div class="about-stat">
+        <div class="stat">
+          <div class="stat-value">+8</div>
+          <div class="stat-label">ans dans le digital</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">5+</div>
+          <div class="stat-label">projets open source</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">curiosité</div>
+        </div>
+      </div>
+      <div class="about-quote reveal">
+        « Kévin est autonome, autodidacte et humble. Son souci pour l'esthétisme applicatif couplé à une sensibilité utilisateur lui confère la capacité de développer des interfaces intuitives et modernes. »
+        <cite>— Recommandation Satochip (LinkedIn)</cite>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Kevin - Développeur Web Freelance. Tous droits réservés.</p>
-    </footer>
+<div class="section-divider"></div>
 
-    <script src="{% static 'js/script.js' %}"></script>
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal">Ce que je propose</div>
+  <h2 class="section-title reveal-3d">Du code à la <em>stratégie</em>, un interlocuteur unique</h2>
+  <div class="services-grid">
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">🧠</div>
+      <h3>Conseil &amp; Intégration IA</h3>
+      <p>Audit de vos processus, identification des cas d'usage IA, intégration d'APIs (OpenAI, Anthropic). Automatisation intelligente et génération de contenu adaptée à votre métier.</p>
+      <span class="service-tag">accompagnement sur mesure</span>
+    </div>
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">🔄</div>
+      <h3>Transition Digitale</h3>
+      <p>Diagnostic numérique, choix d'outils, formation des équipes. Du tableur à l'outil métier, je vous guide pas à pas vers des workflows modernes et efficaces.</p>
+      <span class="service-tag">audit gratuit</span>
+    </div>
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">⚡</div>
+      <h3>Développement Web &amp; Apps</h3>
+      <p>Sites vitrines, dashboards, applications métier, outils internes. Python, Django, JavaScript — du back au front, des solutions robustes et bien documentées.</p>
+      <span class="service-tag">à partir de 500€</span>
+    </div>
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">🤖</div>
+      <h3>Automatisation &amp; Scripts</h3>
+      <p>Bots, scraping, intégrations API, Tampermonkey, Google Apps Script. Supprimez les tâches répétitives et concentrez-vous sur ce qui compte.</p>
+      <span class="service-tag">à partir de 300€</span>
+    </div>
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">🎓</div>
+      <h3>Formation &amp; Mentorat</h3>
+      <p>Formations Python, IA appliquée, outils numériques. Pédagogie concrète, adaptée à votre niveau, avec des exercices tirés de cas réels.</p>
+      <span class="service-tag">Tech Aware</span>
+    </div>
+    <div class="service-card reveal-3d" data-tilt>
+      <div class="service-icon">🔐</div>
+      <h3>Blockchain &amp; Sécurité</h3>
+      <p>Développement JavaCard, outils crypto (Satochip, Satodime, Seedkeeper). Smart cards, wallets matériels, UX sécurisée pour l'écosystème blockchain.</p>
+      <span class="service-tag">niche crypto</span>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Réalisations</div>
+  <h2 class="section-title reveal-3d">Des projets <em>concrets</em>, pas des maquettes</h2>
+  <div class="projects-grid">
+    <div class="project-card reveal-3d" data-tilt>
+      <div class="project-meta">
+        <span class="project-type">Open Source</span>
+        <span class="project-year">2024 – En cours</span>
+      </div>
+      <h3>Satochip Utils</h3>
+      <p>Unification des outils Satochip-Bridge et Factory-Reset-Tool en une seule application avec interface graphique moderne. Gestion de smart cards crypto (Satochip, Satodime, Seedkeeper).</p>
+      <div class="project-stack">
+        <span>Python</span><span>TKinter</span><span>Custom TKinter</span><span>Figma</span><span>Build Automation</span>
+      </div>
+    </div>
+    <div class="project-card reveal-3d" data-tilt>
+      <div class="project-meta">
+        <span class="project-type">Automatisation</span>
+        <span class="project-year">2024</span>
+      </div>
+      <h3>Social Media Automator</h3>
+      <p>Application Python qui génère et publie du contenu via l'API OpenAI (GPT) couplée aux APIs des réseaux sociaux. Automatisation complète du flux éditorial.</p>
+      <div class="project-stack">
+        <span>Python</span><span>OpenAI API</span><span>Social APIs</span><span>GitHub Actions</span>
+      </div>
+    </div>
+    <div class="project-card reveal-3d" data-tilt>
+      <div class="project-meta">
+        <span class="project-type">IA + Data</span>
+        <span class="project-year">2024</span>
+      </div>
+      <h3>CDF-SGI</h3>
+      <p>Traitement automatisé de tickets de caisse avec GPT-4 Vision. Extraction, analyse et stockage structuré dans SQLite avec traçabilité via fichiers de configuration.</p>
+      <div class="project-stack">
+        <span>Python</span><span>GPT-4</span><span>SQLite</span><span>OCR</span>
+      </div>
+    </div>
+    <div class="project-card reveal-3d" data-tilt>
+      <div class="project-meta">
+        <span class="project-type">Communauté</span>
+        <span class="project-year">2021 – 2023</span>
+      </div>
+      <h3>CryptoClub</h3>
+      <p>Création et animation d'un projet complet autour de la blockchain : production vidéo YouTube, veille info, gestion communautaire Telegram, infographie et analyse technique.</p>
+      <div class="project-stack">
+        <span>Montage vidéo</span><span>Infographie</span><span>Telegram</span><span>Rédaction</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- STACK -->
+<section id="stack">
+  <div class="section-label reveal">Outils &amp; Technologies</div>
+  <h2 class="section-title reveal-3d">Un stack <em>pragmatique</em>, orienté résultat</h2>
+  <div class="stack-category reveal">
+    <div class="stack-category-label">Intelligence Artificielle</div>
+    <div class="stack-row">
+      <span class="stack-pill">ChatGPT / OpenAI API</span>
+      <span class="stack-pill">Claude / Anthropic</span>
+      <span class="stack-pill">Prompt Engineering</span>
+    </div>
+  </div>
+  <div class="stack-category reveal">
+    <div class="stack-category-label">Langages</div>
+    <div class="stack-row">
+      <span class="stack-pill">Python</span>
+      <span class="stack-pill">JavaScript</span>
+      <span class="stack-pill">Kotlin</span>
+      <span class="stack-pill">JavaCard</span>
+      <span class="stack-pill">HTML / CSS</span>
+    </div>
+  </div>
+  <div class="stack-category reveal">
+    <div class="stack-category-label">Backend &amp; Frameworks</div>
+    <div class="stack-row">
+      <span class="stack-pill">Django</span>
+      <span class="stack-pill">Google Apps Script</span>
+      <span class="stack-pill">Google Sheets</span>
+      <span class="stack-pill">Tampermonkey</span>
+      <span class="stack-pill">API REST</span>
+      <span class="stack-pill">Render</span>
+    </div>
+  </div>
+  <div class="stack-category reveal">
+    <div class="stack-category-label">Outils &amp; UI</div>
+    <div class="stack-row">
+      <span class="stack-pill">TKinter / CustomTKinter</span>
+      <span class="stack-pill">Figma</span>
+      <span class="stack-pill">Git / GitHub</span>
+      <span class="stack-pill">Linux</span>
+      <span class="stack-pill">Odoo</span>
+      <span class="stack-pill">SQLite</span>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label reveal">Ce qu'on dit de moi</div>
+  <h2 class="section-title reveal-3d">Des mots qui <em>comptent</em></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial reveal-3d">
+      <p>Kévin est autonome, autodidacte et humble. Son souci pour l'esthétisme applicatif couplé à une sensibilité utilisateur lui confère la capacité de développer rapidement des interfaces intuitives et modernes. Il documente très bien son code.</p>
+      <div class="testimonial-author">Recommandation Satochip — Collaboration technique</div>
+    </div>
+    <div class="testimonial reveal-3d">
+      <p>Quelqu'un de dynamique, avenant, curieux et organisé. Il se lève chaque jour à 6h pour courir avant de coder. Sa motivation est contagieuse et ça change des posts habituels — c'est original !</p>
+      <div class="testimonial-author">Recommandation LinkedIn — Écosystème Kryll.io</div>
+    </div>
+    <div class="testimonial reveal-3d">
+      <p>Sa courbe d'apprentissage est exponentielle et il met volontiers ses nouveaux acquis au bénéfice des projets qu'il mène. Kévin est avant tout un passionné !</p>
+      <div class="testimonial-author">Recommandation LinkedIn — Collaboration projet</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-label reveal">Comment je travaille</div>
+  <h2 class="section-title reveal-3d">Simple, transparent, <em>efficace</em></h2>
+  <div class="process-steps">
+    <div class="step reveal-3d">
+      <div class="step-num-wrap"><div class="step-num">01</div></div>
+      <h4>Échange</h4>
+      <p>On discute de votre besoin, vos contraintes, vos objectifs. Gratuit, sans engagement.</p>
+    </div>
+    <div class="step reveal-3d">
+      <div class="step-num-wrap"><div class="step-num">02</div></div>
+      <h4>Proposition</h4>
+      <p>Un devis clair : périmètre, délais, prix fixe. Pas de surprise, pas de jargon inutile.</p>
+    </div>
+    <div class="step reveal-3d">
+      <div class="step-num-wrap"><div class="step-num">03</div></div>
+      <h4>Réalisation</h4>
+      <p>Je développe, vous suivez. Points réguliers, code documenté, itérations incluses.</p>
+    </div>
+    <div class="step reveal-3d">
+      <div class="step-num-wrap"><div class="step-num">04</div></div>
+      <h4>Livraison</h4>
+      <p>Code propre, déployé, documenté. Support 30 jours inclus après livraison.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="cta-glow"></div>
+  <div class="section-label reveal">Prêt à démarrer ?</div>
+  <h2 class="section-title reveal-3d">Parlons de votre <em>prochain projet</em></h2>
+  <p class="cta-sub reveal">Réponse sous 24h — premier échange gratuit et sans engagement.</p>
+  <div class="cta-buttons reveal">
+    <a href="mailto:kevin@example.com" class="btn-primary magnetic">kevin@example.com →</a>
+    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" class="btn-secondary magnetic">LinkedIn</a>
+    <a href="https://github.com/Tech-Aware" target="_blank" class="btn-secondary magnetic">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Kevin Andreazza — Développeur Full-Stack · Consultant IA &amp; Transition Digitale</div>
+  <div class="footer-links">
+    <a href="https://github.com/Tech-Aware" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank">LinkedIn</a>
+    <a href="mailto:kevin@example.com">Email</a>
+  </div>
+</footer>
+
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
