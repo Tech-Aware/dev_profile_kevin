@@ -729,11 +729,16 @@ section {
   margin-bottom: 12px;
 }
 
+.pricing-prefix {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
 .pricing-price {
   font-family: 'Syne', sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
-  white-space: nowrap;
   color: var(--fg);
   margin-bottom: 16px;
 }
