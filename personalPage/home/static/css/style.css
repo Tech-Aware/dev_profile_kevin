@@ -698,6 +698,56 @@ section {
   line-height: 1.7;
 }
 
+/* ── PRICING ── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.pricing-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  transition: all 0.4s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.pricing-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.pricing-price {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--fg);
+  margin-bottom: 16px;
+}
+
+.pricing-card p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.pricing-card-accent {
+  background: var(--accent-light);
+  border-color: rgba(26,143,196,0.2);
+}
+
 /* ── CTA ── */
 .cta-section {
   text-align: center;
