@@ -749,6 +749,17 @@ section {
   line-height: 1.65;
 }
 
+a.pricing-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+a.pricing-card-link:hover {
+  border-color: var(--accent);
+}
+
 .pricing-card-accent {
   background: var(--accent-light);
   border-color: rgba(26,143,196,0.2);
