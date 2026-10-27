@@ -1,4 +1,15 @@
-# personalPage
+# Kevin Andreazza — site personnel
+
+Le site publié sur GitHub Pages est accessible à l'adresse :
+https://tech-aware.github.io/dev_profile_kevin/
+
+Le dossier `docs/` contient la version statique publiée : `index.html`, les styles dans `css/`, le JavaScript dans `js/` et les captures de réalisations dans `assets/`. Il peut être servi localement avec `python -m http.server --directory docs`.
+
+La navigation et les contenus restent accessibles sans JavaScript. Les animations respectent la préférence de réduction des mouvements du navigateur.
+
+Le dossier `personalPage/` conserve l'ancien projet Django. La documentation historique ci-dessous s'y rapporte ; elle ne décrit pas le déploiement GitHub Pages.
+
+## Projet Django historique
 
 personalPage is a personal website developed with Django, designed to showcase the skills, projects, and contact information of a freelance developer.
 

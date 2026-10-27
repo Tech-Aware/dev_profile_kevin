@@ -4,27 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin Andreazza — Développeur Full-Stack Freelance · IA, Automatisation & Solutions Digitales</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Kevin Andreazza, développeur freelance à Toulouse et en Ariège. Développement web, outils métier, automatisation et IA appliquée. Découvrez mes réalisations et parlons de votre projet.">
+  <link rel="canonical" href="https://tech-aware.github.io/dev_profile_kevin/">
+  <meta name="theme-color" content="#096184">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Kevin Andreazza — Développeur freelance">
+  <meta property="og:description" content="Des outils sur mesure pour simplifier votre activité : web, automatisation, intégration d'API et IA appliquée.">
+  <meta property="og:url" content="https://tech-aware.github.io/dev_profile_kevin/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20261027">
 </head>
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<div class="bg-gradient"></div>
+<div class="bg-gradient" aria-hidden="true"></div>
 
-<nav>
-  <div class="logo">K.Andreazza</div>
-  <div class="nav-links">
+<nav aria-label="Navigation principale">
+  <a class="logo" href="#top" aria-label="Kevin Andreazza, accueil">K.Andreazza</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation-links">Menu <span aria-hidden="true">☰</span></button>
+  <div class="nav-links" id="navigation-links">
     <a href="#about">À propos</a>
     <a href="#services">Services</a>
     <a href="#projects">Réalisations</a>
     <a href="#stack">Compétences</a>
+    <a href="#pricing">Tarifs</a>
     <a href="#contact" class="nav-cta">Discuter de votre besoin</a>
   </div>
 </nav>
 
+<main id="contenu" tabindex="-1">
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="hero-label">Développeur Freelance — Toulouse / Ariège, Occitanie</div>
-  <h1>Développeur<br>Freelance</h1>
+  <h1>Développeur<br><em>Freelance</em></h1>
   <p class="hero-sub">Outils sur mesure, automatisation, IA appliquée et solutions digitales pour PME, commerçants, associations et porteurs de projet.</p>
   <div class="hero-actions">
     <a href="#contact" class="btn-primary">Discuter de votre besoin →</a>
@@ -59,10 +75,8 @@
   <div class="about-grid">
     <div class="about-text reveal">
       <p><strong>Développeur full stack freelance</strong>, j'accompagne les PME, commerçants, associations et porteurs de projet dans la conception de <strong>solutions digitales sur mesure</strong> : développement web, outils métier, automatisation, intégration d'API, IA appliquée et structuration de présence en ligne.</p>
-      <br>
       <p>Mon approche est pragmatique et orientée usage : <strong>comprendre rapidement le besoin</strong>, concevoir une solution claire, puis la rendre concrète et réellement exploitable au quotidien.</p>
-      <br>
-      <p>J'interviens là où la technologie peut réellement simplifier le quotidien entrepreneurial. Mon objectif n'est pas de complexifier les choses, mais de construire des <strong>solutions claires, utiles et cohérentes</strong>, au service de l'efficacité, de la visibilité et du développement de l'activité.</p>
+      <p>Mon objectif : construire des <strong>outils utiles et simples à prendre en main</strong>, qui trouvent leur place dans votre activité.</p>
     </div>
     <div class="about-highlight reveal-3d">
       <div class="about-stat">
@@ -145,8 +159,17 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="section-label reveal">Réalisations</div>
-  <h2 class="section-title reveal-3d">Des projets <em>concrets</em>, pas des maquettes</h2>
+  <h2 class="section-title reveal-3d">Des projets <em>concrets</em></h2>
+  <p class="section-intro">Des sites publiés et des outils développés autour de besoins réels. Pour les projets publics, vous pouvez consulter le site ou le code.</p>
   <div class="projects-grid">
+    <div class="project-card reveal-3d">
+      <img class="project-image" src="assets/pure-story.jpg" alt="Page d'accueil du site Pure Story" loading="lazy" width="1265" height="720">
+      <div class="project-meta"><span class="project-type">Site web</span><span class="project-year">En ligne</span></div>
+      <h3>Site vitrine Pure Story</h3>
+      <p>Un site pour présenter l'agence, ses savoirs-faire et ses réalisations, avec un formulaire pour prendre contact.</p>
+      <div class="project-stack"><span>Odoo</span><span>Site vitrine</span><span>Responsive</span></div>
+      <a class="project-link" href="https://pure-story.odoo.com/" target="_blank" rel="noopener noreferrer">Visiter le site<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+    </div>
     <div class="project-card reveal-3d">
       <div class="project-meta">
         <span class="project-type">IA + SaaS</span>
@@ -157,6 +180,7 @@
       <div class="project-stack">
         <span>Python</span><span>OpenAI API</span><span>Google Sheets</span><span>Web App</span>
       </div>
+      <a class="project-link" href="https://github.com/Tech-Aware/vinted-assistant-v1.0.0" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
     </div>
     <div class="project-card reveal-3d">
       <div class="project-meta">
@@ -168,6 +192,7 @@
       <div class="project-stack">
         <span>Python</span><span>API</span><span>OTP</span><span>Validation</span>
       </div>
+      <a class="project-link" href="https://github.com/Tech-Aware/ProxyCall" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
     </div>
     <div class="project-card reveal-3d">
       <div class="project-meta">
@@ -181,6 +206,7 @@
       </div>
     </div>
     <div class="project-card reveal-3d">
+      <img class="project-image" src="assets/comite-esplas.jpg" alt="Page d'accueil du site du Comité d'Esplas-de-Sérou" loading="lazy" width="1265" height="720">
       <div class="project-meta">
         <span class="project-type">Site web</span>
         <span class="project-year">2025</span>
@@ -190,6 +216,7 @@
       <div class="project-stack">
         <span>HTML / CSS</span><span>JavaScript</span><span>Responsive</span>
       </div>
+      <a class="project-link" href="https://cdfesplas.com/" target="_blank" rel="noopener noreferrer">Visiter le site<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
     </div>
     <div class="project-card reveal-3d">
       <div class="project-meta">
@@ -221,7 +248,7 @@
 <!-- STACK -->
 <section id="stack">
   <div class="section-label reveal">Compétences &amp; Technologies</div>
-  <h2 class="section-title reveal-3d">Un stack <em>pragmatique</em>, orienté résultat</h2>
+  <h2 class="section-title reveal-3d">Des compétences au service de <em>votre projet</em></h2>
   <div class="stack-category reveal">
     <div class="stack-category-label">Orienté client</div>
     <div class="stack-row">
@@ -329,6 +356,7 @@
 <section id="pricing">
   <div class="section-label reveal">Tarifs</div>
   <h2 class="section-title reveal-3d">Des formules <em>claires</em>, sans surprise</h2>
+  <p class="section-intro">Les montants affichés sont des points de départ. Le périmètre, les livrables et les conditions sont précisés dans le devis.</p>
   <div class="pricing-grid">
     <a href="https://calendly.com/kevinandreazza/premier-contact" target="_blank" rel="noopener" class="pricing-card pricing-card-link reveal-3d">
       <div class="pricing-label">Premier contact</div>
@@ -366,28 +394,32 @@
 
 <!-- CTA -->
 <section class="cta-section" id="contact">
-  <div class="cta-glow"></div>
+  <div class="cta-glow" aria-hidden="true"></div>
   <div class="section-label reveal">Un besoin concret ?</div>
   <h2 class="section-title reveal-3d">Parlons de votre <em>projet</em></h2>
   <p class="cta-sub reveal">Vous cherchez un interlocuteur capable de comprendre rapidement votre besoin et de construire une solution digitale réellement exploitable ? Je serais ravi d'échanger avec vous.</p>
   <div class="cta-buttons reveal">
-    <a href="mailto:Techaware.ai@gmail.com" class="btn-primary">Techaware.ai@gmail.com →</a>
-    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" class="btn-secondary">LinkedIn</a>
-    <a href="https://github.com/Tech-Aware" target="_blank" class="btn-secondary">GitHub</a>
+    <a href="https://calendly.com/kevinandreazza/premier-contact" target="_blank" rel="noopener noreferrer" class="btn-primary">Réserver un premier échange<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+    <a href="mailto:Techaware.ai@gmail.com" class="btn-secondary">Écrire un e-mail</a>
+    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+    <a href="https://github.com/Tech-Aware" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
 
   </div>
+  <p class="contact-address">Vous préférez écrire ? <a href="mailto:Techaware.ai@gmail.com">Techaware.ai@gmail.com</a></p>
 </section>
+
+</main>
 
 <footer>
   <div>© 2026 Kevin Andreazza — Développeur Full-Stack Freelance · IA, Automatisation &amp; Solutions Digitales</div>
   <div class="footer-links">
-    <a href="https://github.com/Tech-Aware" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank">LinkedIn</a>
-    <a href="https://x.com/tech_aware_" target="_blank">X</a>
+    <a href="https://github.com/Tech-Aware" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://x.com/tech_aware_" target="_blank" rel="noopener noreferrer">X</a>
     <a href="mailto:Techaware.ai@gmail.com">Email</a>
   </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=20261027" defer></script>
 </body>
 </html>

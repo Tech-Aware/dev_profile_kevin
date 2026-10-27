@@ -1,41 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-  // ── NAV SCROLL EFFECT ──
   var nav = document.querySelector('nav');
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 20) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (nav && toggle && links) {
+    function closeMenu(restoreFocus) {
+      nav.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (restoreFocus) toggle.focus();
     }
-  });
-
-  // ── SCROLL REVEAL ──
-  var revEls = document.querySelectorAll('.reveal, .reveal-3d');
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        var parent = e.target.parentElement;
-        var siblings = Array.from(parent.children).filter(function (c) {
-          return c.classList.contains('reveal') || c.classList.contains('reveal-3d');
-        });
-        var idx = siblings.indexOf(e.target);
-        setTimeout(function () {
-          e.target.classList.add('visible');
-        }, Math.max(0, idx) * 100);
-        observer.unobserve(e.target);
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') !== 'true';
+      toggle.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('menu-open', open);
+    });
+    links.addEventListener('click', function (event) {
+      if (event.target.closest('a')) closeMenu(false);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu(true);
       }
     });
-  }, { threshold: 0.06 });
-  revEls.forEach(function (el) { observer.observe(el); });
-
-  // ── SMOOTH NAV ──
-  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      var target = document.querySelector(a.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    document.addEventListener('click', function (event) {
+      if (!nav.contains(event.target)) closeMenu(false);
     });
-  });
-
+    var wideScreen = window.matchMedia('(min-width: 981px)');
+    wideScreen.addEventListener('change', function (event) {
+      if (event.matches) closeMenu(false);
+    });
+    // Only collapse the mobile links once the controls have been initialized.
+    document.documentElement.classList.add('js');
+    function updateNav() {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
+  }
+  // Reveals are decorative: content is visible before and without this code.
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal, .reveal-3d').forEach(function (element) {
+      observer.observe(element);
+    });
+  }
 });
