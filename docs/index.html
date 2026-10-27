@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kevin Andreazza — Développeur Full-Stack Freelance · IA, Automatisation & Solutions Digitales</title>
-  <meta name="description" content="Kevin Andreazza, développeur freelance à Toulouse et en Ariège. Développement web, outils métier, automatisation et IA appliquée. Découvrez mes réalisations et parlons de votre projet.">
+  <title>Kevin Andreazza — Développeur freelance · Outils métier & automatisation</title>
+  <meta name="description" content="Kevin Andreazza, développeur freelance à Toulouse et en Ariège. Des outils métier, automatisations et sites web sur mesure pour simplifier votre activité.">
   <link rel="canonical" href="https://tech-aware.github.io/dev_profile_kevin/">
   <meta name="theme-color" content="#096184">
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261027-2">
+  <link rel="stylesheet" href="css/style.css?v=20261027-3">
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -27,9 +27,9 @@
   <a class="logo" href="#top" aria-label="Kevin Andreazza, accueil">K.Andreazza</a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation-links">Menu <span aria-hidden="true">☰</span></button>
   <div class="nav-links" id="navigation-links">
-    <a href="#about">À propos</a>
-    <a href="#services">Services</a>
     <a href="#projects">Réalisations</a>
+    <a href="#services">Services</a>
+    <a href="#about">À propos</a>
     <a href="#stack">Compétences</a>
     <a href="#pricing">Tarifs</a>
     <a href="#contact" class="nav-cta">Discuter de votre besoin</a>
@@ -39,30 +39,139 @@
 <main id="contenu" tabindex="-1">
 <!-- HERO -->
 <section class="hero" id="top">
-  <div class="hero-label">Développeur Freelance — Toulouse / Ariège, Occitanie</div>
-  <h1>Développeur<br><em>Freelance</em></h1>
-  <p class="hero-sub">Outils sur mesure, automatisation, IA appliquée et solutions digitales pour PME, commerçants, associations et porteurs de projet.</p>
+  <div class="hero-label">Kevin Andreazza · Développeur freelance · Toulouse / Ariège</div>
+  <h1>Des outils sur mesure pour <em>simplifier votre activité.</em></h1>
+  <p class="hero-sub">J'aide les PME, commerçants et associations à automatiser leurs tâches répétitives, connecter leurs logiciels et développer les outils qui leur manquent.</p>
   <div class="hero-actions">
-    <a href="#contact" class="btn-primary">Discuter de votre besoin →</a>
-    <a href="#projects" class="btn-secondary">Voir mes réalisations</a>
+    <a href="#contact" class="btn-primary">Parlons de votre besoin →</a>
+    <a href="#projects" class="btn-secondary">Découvrir mes réalisations</a>
   </div>
-  <div class="hero-icons">
-    <div class="hero-icon-item">
-      <div class="hero-icon-circle">🚀</div>
-      <span class="hero-icon-label">Automatisation</span>
-    </div>
-    <div class="hero-icon-item">
-      <div class="hero-icon-circle">💡</div>
-      <span class="hero-icon-label">IA appliquée</span>
-    </div>
-    <div class="hero-icon-item">
-      <div class="hero-icon-circle">🔗</div>
-      <span class="hero-icon-label">Intégration d'API</span>
-    </div>
-    <div class="hero-icon-item">
-      <div class="hero-icon-circle">🛠</div>
-      <span class="hero-icon-label">Outils métier</span>
-    </div>
+  <p class="hero-note">Un premier échange gratuit pour faire le point sur votre projet.</p>
+  <ul class="hero-skills" aria-label="Domaines d'intervention">
+    <li>Outils métier</li><li>Automatisation &amp; API</li><li>IA appliquée</li><li>Sites web</li>
+  </ul>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Réalisations</div>
+  <h2 class="section-title reveal-3d">Des besoins concrets, <em>des solutions à découvrir</em></h2>
+  <p class="section-intro">Trois exemples pour comprendre ce que je peux construire pour votre activité, avec les fonctions développées et les éléments consultables.</p>
+  <div class="case-studies">
+    <article class="case-study reveal" id="case-vinted">
+      <div class="case-visual flow-visual">
+        <p class="visual-label">Assistant d'annonces · Parcours de l'application</p>
+        <ol class="workflow"><li>Photos du vêtement</li><li>Extraction des informations</li><li>Titre &amp; description à vérifier</li></ol>
+        <p class="visual-caption">Python · Analyse d'images · Règles métier</p>
+      </div>
+      <div class="case-content">
+        <div class="project-meta"><span class="project-type">IA appliquée</span><span class="project-year">Application desktop · Code public</span></div>
+        <h3>Préparer des annonces de vêtements à partir de photos</h3>
+        <dl class="case-details">
+          <div><dt>Le besoin</dt><dd>Rédiger des annonces en reprenant les informations des photos et des étiquettes.</dd></div>
+          <div><dt>Mon intervention</dt><dd>Développement d'un assistant Python associant analyse d'images, extraction de texte et règles propres aux vêtements.</dd></div>
+          <div><dt>Les fonctions développées</dt><dd>Import de plusieurs photos, extraction d'informations et génération d'un titre, d'une description et de métadonnées à contrôler avant publication.</dd></div>
+        </dl>
+        <p class="case-status">La version présentée ici est l'application desktop du dépôt public.</p>
+        <div class="project-stack"><span>Python</span><span>Gemini</span><span>Google Vision</span><span>CustomTkinter</span></div>
+        <a class="project-link" href="https://github.com/Tech-Aware/vinted-assistant-v1.0.0" target="_blank" rel="noopener noreferrer">Consulter le code et les fonctionnalités<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+      </div>
+    </article>
+    <article class="case-study reveal" id="case-pain">
+      <div class="case-visual flow-visual">
+        <p class="visual-label">Gestion des commandes · Organisation de l'outil</p>
+        <ol class="workflow"><li>Prise de commandes</li><li>Centralisation dans Google Sheets</li><li>Organisation du suivi</li></ol>
+        <p class="visual-caption">Application web · Google Apps Script</p>
+      </div>
+      <div class="case-content">
+        <div class="project-meta"><span class="project-type">Outil métier</span><span class="project-year">2025 · Outil développé</span></div>
+        <h3>Centraliser les commandes de pain</h3>
+        <dl class="case-details">
+          <div><dt>Le besoin</dt><dd>Disposer d'un outil dédié pour prendre et organiser les commandes de pain.</dd></div>
+          <div><dt>Mon intervention</dt><dd>Développement d'une application web sur mesure avec Google Apps Script, reliée à Google Sheets.</dd></div>
+          <div><dt>Les fonctions développées</dt><dd>Une interface de prise de commandes et une gestion centralisée des informations dans un tableur.</dd></div>
+        </dl>
+        <div class="project-stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Application web</span></div>
+        <a class="project-link" href="#contact">Échanger sur un outil de gestion similaire →</a>
+      </div>
+    </article>
+    <article class="case-study reveal" id="case-pure-story">
+      <div class="case-visual site-visual">
+        <img src="assets/pure-story.jpg" alt="Page d'accueil du site Pure Story présentant l'agence et ses réalisations" loading="lazy" width="1265" height="720">
+        <p class="visual-caption">Aperçu du site Pure Story</p>
+      </div>
+      <div class="case-content">
+        <div class="project-meta"><span class="project-type">Site vitrine</span><span class="project-year">Site en ligne</span></div>
+        <h3>Présenter l'agence Pure Story et faciliter le contact</h3>
+        <dl class="case-details">
+          <div><dt>Le besoin</dt><dd>Présenter l'agence, ses savoir-faire et ses réalisations sur un site accessible au public.</dd></div>
+          <div><dt>Mon intervention</dt><dd>Création et mise en forme du site vitrine sur Odoo, avec une présentation adaptée aux différents écrans.</dd></div>
+          <div><dt>À découvrir</dt><dd>Les pages de présentation de l'agence, ses réalisations et un formulaire de contact.</dd></div>
+        </dl>
+        <div class="project-stack"><span>Odoo</span><span>Site vitrine</span><span>Responsive</span></div>
+        <a class="project-link" href="https://pure-story.odoo.com/" target="_blank" rel="noopener noreferrer">Visiter le site Pure Story<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+      </div>
+    </article>
+  </div>
+  <h3 class="other-projects-title">D'autres réalisations</h3>
+  <div class="projects-grid">
+    <article class="project-card reveal-3d" id="project-comite">
+      <img class="project-image" src="assets/comite-esplas.jpg" alt="Page d'accueil du site du Comité d'Esplas-de-Sérou" loading="lazy" width="1265" height="720">
+      <div class="project-meta"><span class="project-type">Site web</span><span class="project-year">2025</span></div>
+      <h3>Site du Comité d'Esplas-de-Sérou</h3>
+      <p>Conception et structuration d'un site pour centraliser les informations de l'association, présenter ses activités et communiquer autour des événements.</p>
+      <div class="project-stack"><span>Site associatif</span><span>HTML / CSS</span><span>JavaScript</span></div>
+      <a class="project-link" href="https://cdfesplas.com/" target="_blank" rel="noopener noreferrer">Visiter le site<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+    </article>
+    <article class="project-card reveal-3d">
+      <div class="project-meta"><span class="project-type">API &amp; automatisation</span><span class="project-year">Code public</span></div>
+      <h3>ProxyCall : connecter téléphonie et données métier</h3>
+      <p>Développement d'un outil pour Reseller 2.0 autour de l'attribution de numéros proxy. Le dépôt actuel réunit une API FastAPI, le routage d'appels Twilio et la synchronisation avec Google Sheets.</p>
+      <div class="project-stack"><span>Python / FastAPI</span><span>Twilio</span><span>Google Sheets</span><span>Render</span></div>
+      <a class="project-link" href="https://github.com/Tech-Aware/ProxyCall" target="_blank" rel="noopener noreferrer">Consulter le dépôt GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+    </article>
+    <article class="project-card reveal-3d" id="project-satochip">
+      <div class="project-meta"><span class="project-type">Interface desktop</span><span class="project-year">2024</span></div>
+      <h3>Modernisation d'interfaces Windows pour Satochip</h3>
+      <p>Travail de refonte d'interfaces desktop de l'écosystème Satochip, avec une attention portée à la lisibilité, à l'ergonomie et à la cohérence des écrans.</p>
+      <div class="project-stack"><span>Python</span><span>CustomTkinter</span><span>Figma</span><span>Build Automation</span></div>
+    </article>
+    <article class="project-card reveal-3d">
+      <div class="project-meta"><span class="project-type">Application Android</span><span class="project-year">2026</span></div>
+      <h3>Passerelle SMS Android</h3>
+      <p>Développement en Kotlin d'une application pour récupérer et exécuter des campagnes SMS, avec une orchestration via Google Sheets et Google Apps Script.</p>
+      <div class="project-stack"><span>Kotlin / Android</span><span>Google Apps Script</span><span>Google Sheets</span></div>
+    </article>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal">Comment je peux vous aider</div>
+  <h2 class="section-title reveal-3d">Trois façons de <em>simplifier votre quotidien</em></h2>
+  <div class="services-grid">
+    <article class="service-card reveal-3d">
+      <div class="service-icon" aria-hidden="true">🔗</div>
+      <h3>Automatiser vos tâches et connecter vos outils</h3>
+      <p>Relier vos logiciels, transférer des informations et automatiser les manipulations répétitives. Intégrer l'IA pour une tâche précise, comme extraire des informations ou préparer un contenu à vérifier.</p>
+      <a class="project-link" href="#case-vinted">Exemple : préparer des annonces à partir de photos →</a>
+    </article>
+    <article class="service-card reveal-3d">
+      <div class="service-icon" aria-hidden="true">🛠</div>
+      <h3>Créer votre application métier</h3>
+      <p>Développer une interface adaptée à votre manière de travailler : organiser des commandes, centraliser des données ou gérer un parcours spécifique. Reprendre un outil existant lorsque c'est pertinent.</p>
+      <a class="project-link" href="#case-pain">Exemple : centraliser les commandes de pain →</a>
+    </article>
+    <article class="service-card reveal-3d">
+      <div class="service-icon" aria-hidden="true">🌐</div>
+      <h3>Créer ou améliorer votre site web</h3>
+      <p>Présenter vos services et vos réalisations avec une navigation claire, des pages adaptées aux différents écrans et un accès simple à vos coordonnées.</p>
+      <a class="project-link" href="#case-pure-story">Exemple : le site vitrine de Pure Story →</a>
+    </article>
   </div>
 </section>
 
@@ -71,29 +180,22 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label reveal">À propos</div>
-  <h2 class="section-title reveal-3d">Une approche <em>pragmatique</em>, orientée usage</h2>
+  <h2 class="section-title reveal-3d">Comprendre votre activité, <em>construire l'outil utile</em></h2>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p><strong>Développeur full stack freelance</strong>, j'accompagne les PME, commerçants, associations et porteurs de projet dans la conception de <strong>solutions digitales sur mesure</strong> : développement web, outils métier, automatisation, intégration d'API, IA appliquée et structuration de présence en ligne.</p>
-      <p>Mon approche est pragmatique et orientée usage : <strong>comprendre rapidement le besoin</strong>, concevoir une solution claire, puis la rendre concrète et réellement exploitable au quotidien.</p>
-      <p>Mon objectif : construire des <strong>outils utiles et simples à prendre en main</strong>, qui trouvent leur place dans votre activité.</p>
+      <p>Je suis <strong>Kevin Andreazza, développeur full stack freelance chez Tech Aware</strong>. Je conçois des outils à partir de problèmes concrets : des commandes à organiser, des informations à ressaisir, des logiciels à relier ou une activité à présenter en ligne.</p>
+      <p>Mes réalisations couvrent le développement web et logiciel, l'automatisation et l'intégration d'IA. Le point de départ reste le même : <strong>comprendre vos usages et vos contraintes</strong>, puis choisir une solution adaptée.</p>
+      <p>Vous pouvez me présenter un besoin déjà défini ou une difficulté à clarifier. Nous précisons ensemble ce qu'il faut construire, reprendre ou connecter.</p>
     </div>
-    <div class="about-highlight reveal-3d">
-      <div class="about-stat">
-        <div class="stat">
-          <div class="stat-value">5+</div>
-          <div class="stat-label">ans d'expérience</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">15+</div>
-          <div class="stat-label">projets livrés</div>
-        </div>
-      </div>
-      <div class="about-quote reveal">
-        « Kevin a toujours fait preuve d'une très grande autonomie dans les missions qui lui étaient confiées. Il a su relever les défis techniques qui lui étaient soumis avec sérieux et adaptabilité. »
-        <cite>— Bastien Taquet</cite>
-      </div>
-    </div>
+    <aside class="about-highlight reveal-3d" aria-label="Mon approche">
+      <h3>Un interlocuteur, du besoin à la prise en main</h3>
+      <ul class="approach-list">
+        <li>Un besoin clarifié avant de choisir les outils.</li>
+        <li>Un périmètre et des livrables définis ensemble.</li>
+        <li>Des échanges pour confronter la solution à vos usages.</li>
+      </ul>
+      <a class="project-link" href="#process">Voir comment se déroule un projet →</a>
+    </aside>
   </div>
 </section>
 
@@ -101,196 +203,42 @@
 
 <!-- CIBLES -->
 <section id="cibles">
-  <div class="section-label reveal">Pour qui</div>
-  <h2 class="section-title reveal-3d">PME · Commerçants · Associations · Institutions · <em>Porteurs de projet</em></h2>
-  <div class="about-text reveal" style="max-width:700px">
-    <p>Vous avez besoin d'un <strong>outil sur mesure</strong> pour simplifier un usage interne. Vous perdez du temps dans des tâches répétitives. Vous voulez relier plusieurs outils ou automatiser un flux. Vous cherchez une <strong>intégration concrète de l'IA</strong> dans votre activité. Vous avez une idée claire, ou au contraire un besoin flou à structurer techniquement.</p>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="section-label reveal">Ce que je fais</div>
-  <h2 class="section-title reveal-3d">Des solutions digitales <em>sur mesure</em></h2>
-  <div class="services-grid">
-    <div class="service-card reveal-3d">
-      <div class="service-icon">⚡</div>
-      <h3>Développement web sur mesure</h3>
-      <p>Création de sites, interfaces et applications web pensées pour répondre à un besoin réel, avec une logique simple, claire et exploitable.</p>
-      <span class="service-tag">sites &amp; apps</span>
-    </div>
-    <div class="service-card reveal-3d">
-      <div class="service-icon">🛠</div>
-      <h3>Outils métier</h3>
-      <p>Conception d'outils sur mesure pour centraliser des informations, fluidifier des opérations et simplifier des usages quotidiens.</p>
-      <span class="service-tag">sur mesure</span>
-    </div>
-    <div class="service-card reveal-3d">
-      <div class="service-icon">🔄</div>
-      <h3>Automatisation</h3>
-      <p>Automatisation de tâches répétitives, de workflows et de processus internes pour faire gagner du temps et réduire les manipulations inutiles.</p>
-      <span class="service-tag">gain de temps</span>
-    </div>
-    <div class="service-card reveal-3d">
-      <div class="service-icon">🔗</div>
-      <h3>Intégration d'API</h3>
-      <p>Connexion de différents services, outils et systèmes pour créer des passerelles fiables entre données, interfaces et usages métier.</p>
-      <span class="service-tag">passerelles</span>
-    </div>
-    <div class="service-card reveal-3d">
-      <div class="service-icon">🧠</div>
-      <h3>IA appliquée</h3>
-      <p>Intégration pragmatique de l'intelligence artificielle dans des cas d'usage concrets : génération de contenus, assistance métier, structuration de données et optimisation de process.</p>
-      <span class="service-tag">ia concrète</span>
-    </div>
-    <div class="service-card reveal-3d">
-      <div class="service-icon">🌐</div>
-      <h3>Présence digitale</h3>
-      <p>Mise en place de pages web, interfaces, supports digitaux et dispositifs de présence en ligne utiles à l'activité.</p>
-      <span class="service-tag">visibilité</span>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-label reveal">Réalisations</div>
-  <h2 class="section-title reveal-3d">Des projets <em>concrets</em></h2>
-  <p class="section-intro">Des sites publiés et des outils développés autour de besoins réels. Pour les projets publics, vous pouvez consulter le site ou le code.</p>
-  <div class="projects-grid">
-    <div class="project-card reveal-3d">
-      <img class="project-image" src="assets/pure-story.jpg" alt="Page d'accueil du site Pure Story" loading="lazy" width="1265" height="720">
-      <div class="project-meta"><span class="project-type">Site web</span><span class="project-year">En ligne</span></div>
-      <h3>Site vitrine Pure Story</h3>
-      <p>Un site pour présenter l'agence, ses savoirs-faire et ses réalisations, avec un formulaire pour prendre contact.</p>
-      <div class="project-stack"><span>Odoo</span><span>Site vitrine</span><span>Responsive</span></div>
-      <a class="project-link" href="https://pure-story.odoo.com/" target="_blank" rel="noopener noreferrer">Visiter le site<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
-    </div>
-    <div class="project-card reveal-3d">
-      <img class="project-image" src="assets/comite-esplas.jpg" alt="Page d'accueil du site du Comité d'Esplas-de-Sérou" loading="lazy" width="1265" height="720">
-      <div class="project-meta">
-        <span class="project-type">Site web</span>
-        <span class="project-year">2025</span>
-      </div>
-      <h3>Site du Comité d'Esplas-de-Sérou</h3>
-      <p>Conception et structuration d'un site web destiné à centraliser les informations utiles, valoriser les activités locales et améliorer la communication autour des événements.</p>
-      <div class="project-stack">
-        <span>HTML / CSS</span><span>JavaScript</span><span>Responsive</span>
-      </div>
-      <a class="project-link" href="https://cdfesplas.com/" target="_blank" rel="noopener noreferrer">Visiter le site<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
-    </div>
-    <div class="project-card reveal-3d">
-      <div class="project-meta">
-        <span class="project-type">IA + SaaS</span>
-        <span class="project-year">2025 – En cours</span>
-      </div>
-      <h3>Assistant IA pour revendeurs Vinted</h3>
-      <p>Outil conçu pour aider les revendeurs Vinted à générer titres et descriptions d'annonces. Initialement développé en Python, puis porté en web app collaborative avec Google Sheets, avec évolution en cours vers un SaaS multi-utilisateur.</p>
-      <div class="project-stack">
-        <span>Python</span><span>OpenAI API</span><span>Google Sheets</span><span>Web App</span>
-      </div>
-      <a class="project-link" href="https://github.com/Tech-Aware/vinted-assistant-v1.0.0" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
-    </div>
-    <div class="project-card reveal-3d">
-      <div class="project-meta">
-        <span class="project-type">Outil métier</span>
-        <span class="project-year">2025</span>
-      </div>
-      <h3>ProxyCall : souscription &amp; validation OTP</h3>
-      <p>Outil métier développé pour Reseller 2.0 afin de gérer la souscription de numéros proxy, avec contrôle anti-doublon, validation des coordonnées et parcours OTP structuré.</p>
-      <div class="project-stack">
-        <span>Python</span><span>API</span><span>OTP</span><span>Validation</span>
-      </div>
-      <a class="project-link" href="https://github.com/Tech-Aware/ProxyCall" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
-    </div>
-    <div class="project-card reveal-3d">
-      <div class="project-meta">
-        <span class="project-type">Open Source</span>
-        <span class="project-year">2024</span>
-      </div>
-      <h3>Refonte desktop Windows pour Satochip</h3>
-      <p>Travail de refonte et de modernisation de l'interface desktop Windows pour améliorer la lisibilité, l'ergonomie et la cohérence d'usage des applications de l'écosystème Satochip.</p>
-      <div class="project-stack">
-        <span>Python</span><span>Custom TKinter</span><span>Figma</span><span>Build Automation</span>
-      </div>
-    </div>
-    <div class="project-card reveal-3d">
-      <div class="project-meta">
-        <span class="project-type">Mobile</span>
-        <span class="project-year">2026</span>
-      </div>
-      <h3>Passerelle SMS Android en Kotlin</h3>
-      <p>Application mobile développée sur mesure pour récupérer et exécuter des campagnes SMS, en reliant interface Android, logique de polling et orchestration via Google Sheets et Google Apps Script.</p>
-      <div class="project-stack">
-        <span>Kotlin</span><span>Android</span><span>Google Apps Script</span><span>Google Sheets</span>
-      </div>
-    </div>
-    <div class="project-card reveal-3d">
-      <div class="project-meta">
-        <span class="project-type">Outil métier</span>
-        <span class="project-year">2025</span>
-      </div>
-      <h3>Application gestion des commandes de pain</h3>
-      <p>Outil développé sur mesure pour centraliser, organiser et simplifier la prise de commandes de pain, avec une logique de gestion reposant sur Google Sheets et Google Apps Script.</p>
-      <div class="project-stack">
-        <span>Google Apps Script</span><span>Google Sheets</span><span>Web App</span>
-      </div>
-    </div>
-  </div>
+  <div class="section-label reveal">Votre point de départ</div>
+  <h2 class="section-title reveal-3d">Une difficulté au quotidien ? <em>Partons de là.</em></h2>
+  <ul class="needs-list reveal">
+    <li>Vous recopiez les mêmes informations dans plusieurs outils.</li>
+    <li>Vos commandes ou vos données deviennent difficiles à suivre.</li>
+    <li>Vous souhaitez tester un usage précis de l'IA.</li>
+    <li>Votre site doit mieux présenter votre activité et faciliter le contact.</li>
+  </ul>
+  <a class="project-link" href="#contact">Décrivez-moi votre situation →</a>
 </section>
 
 <div class="section-divider"></div>
 
 <!-- STACK -->
 <section id="stack">
-  <div class="section-label reveal">Compétences &amp; Technologies</div>
-  <h2 class="section-title reveal-3d">Des compétences au service de <em>votre projet</em></h2>
+  <div class="section-label reveal">Compétences &amp; technologies</div>
+  <h2 class="section-title reveal-3d">Des technologies reliées à <em>des usages concrets</em></h2>
+  <p class="section-intro">Mes principaux domaines d'intervention sont les outils métier, l'automatisation et l'intégration de services. Les technologies sont choisies selon les besoins du projet.</p>
   <div class="stack-category reveal">
-    <div class="stack-category-label">Orienté client</div>
-    <div class="stack-row">
-      <span class="stack-pill">Développement web</span>
-      <span class="stack-pill">Logiciels personnalisés</span>
-      <span class="stack-pill">Automatisations</span>
-      <span class="stack-pill">Intégration d'API</span>
-      <span class="stack-pill">Intelligence artificielle</span>
-      <span class="stack-pill">Applications mobiles</span>
-    </div>
+    <h3 class="stack-category-label">Outils métier &amp; connexions entre services</h3>
+    <p class="stack-context">Applications sur mesure, traitement de données et API, comme dans ProxyCall et l'outil de commandes.</p>
+    <div class="stack-row"><span class="stack-pill">Python</span><span class="stack-pill">FastAPI</span><span class="stack-pill">Google Apps Script</span><span class="stack-pill">Google Sheets</span><span class="stack-pill">API REST</span><span class="stack-pill">Twilio</span></div>
   </div>
   <div class="stack-category reveal">
-    <div class="stack-category-label">Langages &amp; Frameworks</div>
-    <div class="stack-row">
-      <span class="stack-pill">Python</span>
-      <span class="stack-pill">JavaScript</span>
-      <span class="stack-pill">Kotlin</span>
-      <span class="stack-pill">Google Apps Script</span>
-      <span class="stack-pill">HTML / CSS</span>
-      <span class="stack-pill">Django</span>
-    </div>
+    <h3 class="stack-category-label">IA appliquée &amp; extraction d'informations</h3>
+    <p class="stack-context">Analyse d'images, extraction de texte et génération encadrée par des règles métier, comme dans l'assistant d'annonces.</p>
+    <div class="stack-row"><span class="stack-pill">Gemini</span><span class="stack-pill">Google Vision / OCR</span><span class="stack-pill">OpenAI API / GPT</span><span class="stack-pill">Claude / Anthropic</span><span class="stack-pill">Conception de prompts</span></div>
   </div>
   <div class="stack-category reveal">
-    <div class="stack-category-label">IA &amp; Automatisation</div>
-    <div class="stack-row">
-      <span class="stack-pill">OpenAI API / GPT</span>
-      <span class="stack-pill">Claude / Anthropic</span>
-      <span class="stack-pill">Prompt Engineering</span>
-      <span class="stack-pill">API REST</span>
-      <span class="stack-pill">Google Sheets</span>
-    </div>
+    <h3 class="stack-category-label">Sites &amp; interfaces</h3>
+    <p class="stack-context">Sites vitrines et interfaces web ou desktop, comme Pure Story et le travail réalisé pour Satochip.</p>
+    <div class="stack-row"><span class="stack-pill">HTML / CSS</span><span class="stack-pill">JavaScript</span><span class="stack-pill">Odoo</span><span class="stack-pill">Django</span><span class="stack-pill">CustomTkinter</span><span class="stack-pill">Figma</span></div>
   </div>
   <div class="stack-category reveal">
-    <div class="stack-category-label">Outils &amp; Plateformes</div>
-    <div class="stack-row">
-      <span class="stack-pill">Git / GitHub</span>
-      <span class="stack-pill">Figma</span>
-      <span class="stack-pill">Linux</span>
-      <span class="stack-pill">Android</span>
-      <span class="stack-pill">SQLite</span>
-      <span class="stack-pill">Custom TKinter</span>
-    </div>
+    <h3 class="stack-category-label">Autres technologies mobilisées selon les projets</h3>
+    <div class="stack-row"><span class="stack-pill">Kotlin / Android</span><span class="stack-pill">Git / GitHub</span><span class="stack-pill">Linux</span><span class="stack-pill">SQLite</span><span class="stack-pill">Render</span></div>
   </div>
 </section>
 
@@ -312,10 +260,12 @@
     <div class="testimonial reveal-3d">
       <p>Kévin est autonome, autodidacte et humble. Son souci pour l'esthétisme applicatif couplé à une sensibilité utilisateur lui confère la capacité de développer rapidement des interfaces intuitives et modernes.</p>
       <div class="testimonial-author">Recommandation Satochip — Collaboration technique</div>
+      <a class="testimonial-context" href="#project-satochip">Projet associé : interfaces desktop →</a>
     </div>
     <div class="testimonial reveal-3d">
       <p>On a lancé de nouveaux services qui sont rapidement devenus chronophages. Grâce à l'expertise de Kevin, nous avons pu déléguer au numérique certaines de nos actions pour nous concentrer sur l'essentiel : créer du lien et de la convivialité.</p>
       <div class="testimonial-author">Comité d'Esplas-de-Sérou</div>
+      <a class="testimonial-context" href="#project-comite">Projet associé : site et outils de l'association →</a>
     </div>
   </div>
 </section>
@@ -335,17 +285,17 @@
     <div class="step reveal-3d">
       <div class="step-num-wrap"><div class="step-num">02</div></div>
       <h4>Concevoir</h4>
-      <p>Je conçois une solution adaptée, claire et réaliste. Périmètre, délais, prix fixe — pas de surprise.</p>
+      <p>Je conçois une solution adaptée, claire et réaliste. Périmètre, livrables, calendrier et budget sont précisés dans le devis.</p>
     </div>
     <div class="step reveal-3d">
       <div class="step-num-wrap"><div class="step-num">03</div></div>
       <h4>Développer</h4>
-      <p>Je développe de manière fiable et exploitable. Points réguliers, code documenté, itérations incluses.</p>
+      <p>Nous faisons des points réguliers et vérifions les fonctions prévues. Les ajustements sont cadrés selon le périmètre convenu.</p>
     </div>
     <div class="step reveal-3d">
       <div class="step-num-wrap"><div class="step-num">04</div></div>
       <h4>Livrer</h4>
-      <p>Solution livrée, déployée, prête à être utilisée au quotidien. Support inclus après livraison.</p>
+      <p>Nous préparons la mise en service et la prise en main. La documentation, les conditions de support et la maintenance sont définies dans le devis.</p>
     </div>
   </div>
 </section>
@@ -355,8 +305,8 @@
 <!-- PRICING -->
 <section id="pricing">
   <div class="section-label reveal">Tarifs</div>
-  <h2 class="section-title reveal-3d">Des formules <em>claires</em>, sans surprise</h2>
-  <p class="section-intro">Les montants affichés sont des points de départ. Le périmètre, les livrables et les conditions sont précisés dans le devis.</p>
+  <h2 class="section-title reveal-3d">Des prestations <em>cadrées avant de démarrer</em></h2>
+  <p class="section-intro">Ces montants sont des points de départ, selon le besoin et le périmètre. La durée, le format, les livrables et les conditions sont confirmés dans le devis avant toute intervention.</p>
   <div class="pricing-grid">
     <a href="https://calendly.com/kevinandreazza/premier-contact" target="_blank" rel="noopener" class="pricing-card pricing-card-link reveal-3d">
       <div class="pricing-label">Premier contact</div>
@@ -364,27 +314,27 @@
       <p>Réservez un créneau pour discuter de votre projet — gratuit et sans engagement.</p>
     </a>
     <div class="pricing-card reveal-3d">
-      <div class="pricing-label">Consulting</div>
+      <div class="pricing-label">Conseil ciblé</div>
       <div class="pricing-prefix">À partir de</div>
       <div class="pricing-price">150 €</div>
-      <p>Conseil et accompagnement sur un sujet technique, une orientation stratégique ou un choix d'outil.</p>
+      <p>Pour clarifier un besoin technique ou choisir un outil. Objectif : des recommandations adaptées et une prochaine étape identifiée. Durée et format définis au devis.</p>
     </div>
     <div class="pricing-card reveal-3d">
-      <div class="pricing-label">Maintenance &amp; Rétro-ingénierie</div>
+      <div class="pricing-label">Reprise d'un outil existant</div>
       <div class="pricing-prefix">À partir de</div>
       <div class="pricing-price">300 €</div>
-      <p>Reprise d'un existant, correction, optimisation ou remise en état d'un outil ou d'un projet.</p>
+      <p>Pour corriger ou faire évoluer un outil. Le périmètre de la correction ou de l'adaptation est défini après examen de l'existant.</p>
     </div>
     <div class="pricing-card reveal-3d">
-      <div class="pricing-label">Audit complet</div>
+      <div class="pricing-label">Audit de vos outils</div>
       <div class="pricing-prefix">À partir de</div>
       <div class="pricing-price">1 000 €</div>
-      <p>Analyse approfondie de votre écosystème digital, avec recommandations concrètes et plan d'action.</p>
+      <p>Pour identifier les points de friction entre vos outils et vos usages. Livrables : recommandations et plan d'action sur le périmètre étudié.</p>
     </div>
     <div class="pricing-card pricing-card-accent reveal-3d">
       <div class="pricing-label">Projet sur mesure</div>
       <div class="pricing-price">Sur devis</div>
-      <p>Développement complet d'un outil, d'une application ou d'une solution digitale adaptée à votre activité.</p>
+      <p>Pour créer un outil métier, une automatisation ou un site web. Les fonctions attendues, les livrables et les étapes sont précisés dans une proposition adaptée.</p>
       <a href="#contact" class="btn-primary" style="margin-top:20px">Me contacter →</a>
     </div>
   </div>
@@ -397,15 +347,15 @@
   <div class="cta-glow" aria-hidden="true"></div>
   <div class="section-label reveal">Un besoin concret ?</div>
   <h2 class="section-title reveal-3d">Parlons de votre <em>projet</em></h2>
-  <p class="cta-sub reveal">Vous cherchez un interlocuteur capable de comprendre rapidement votre besoin et de construire une solution digitale réellement exploitable ? Je serais ravi d'échanger avec vous.</p>
+  <p class="cta-sub reveal">Décrivez votre activité, ce qui vous prend du temps et ce que vous aimeriez améliorer. Nous ferons le point sur votre besoin et les pistes possibles lors d'un premier échange gratuit, sans engagement.</p>
   <div class="cta-buttons reveal">
     <a href="https://calendly.com/kevinandreazza/premier-contact" target="_blank" rel="noopener noreferrer" class="btn-primary">Réserver un premier échange<span aria-hidden="true"> ↗</span><span class="sr-only"> (nouvel onglet)</span></a>
-    <a href="mailto:Techaware.ai@gmail.com" class="btn-secondary">Écrire un e-mail</a>
+    <a href="mailto:kevinandreazza@gmail.com" class="btn-secondary">Écrire un e-mail</a>
     <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
     <a href="https://github.com/Tech-Aware" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
 
   </div>
-  <p class="contact-address">Vous préférez écrire ? <a href="mailto:Techaware.ai@gmail.com">Techaware.ai@gmail.com</a></p>
+  <p class="contact-address">Vous préférez écrire ? <a href="mailto:kevinandreazza@gmail.com">kevinandreazza@gmail.com</a></p>
 </section>
 
 </main>
@@ -416,7 +366,7 @@
     <a href="https://github.com/Tech-Aware" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="https://www.linkedin.com/in/kevin-andreazza/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://x.com/tech_aware_" target="_blank" rel="noopener noreferrer">X</a>
-    <a href="mailto:Techaware.ai@gmail.com">Email</a>
+    <a href="mailto:kevinandreazza@gmail.com">Email</a>
   </div>
 </footer>
 
