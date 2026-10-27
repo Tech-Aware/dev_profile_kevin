@@ -77,6 +77,8 @@ section { padding: 76px 36px; max-width: 1200px; margin: 0 auto; position: relat
 .service-tag { display: inline-block; margin-top: 20px; padding: 4px 12px; border-radius: 100px; background: var(--accent-light); color: var(--accent); font-size: .77rem; font-weight: 600; }
 .projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: start; }
 .project-card { display: flex; flex-direction: column; }
+.project-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.project-card p { max-width: 72ch; }
 .project-image { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border: 1px solid var(--card-border); border-radius: 10px; margin-bottom: 22px; background: var(--bg-soft); }
 .project-meta { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; font-size: .78rem; }
 .project-type { background: var(--accent-light); color: var(--accent); border-radius: 100px; padding: 4px 12px; font-weight: 600; }
