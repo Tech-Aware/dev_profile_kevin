@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Reveal a collapsed project when reached from an existing direct link.
+  function revealLinkedProject() {
+    var target;
+    try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); }
+    catch (error) { return; }
+    if (!target) return;
+    var disclosure = target.closest('details');
+    if (disclosure && !disclosure.open) {
+      disclosure.open = true;
+      window.requestAnimationFrame(function () { target.scrollIntoView({ block: 'start' }); });
+    }
+  }
+  window.addEventListener('hashchange', revealLinkedProject);
+  revealLinkedProject();
   var nav = document.querySelector('nav');
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
